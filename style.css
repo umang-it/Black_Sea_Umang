@@ -1,0 +1,249 @@
+/* css reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* global css */
+/* curson pointer */
+
+.cursor {
+    cursor: pointer;
+}
+
+/* display flex */
+
+.d-flex {
+    display: flex;
+}
+
+/* header section css */
+.nav-section {
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    background-color: #519DA6;
+    color: white;
+    position: relative;
+    align-items: center;
+
+}
+.nav-section ul {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav-section ul li {
+    margin: 0 0.8rem;
+    color: #d1d1d1;
+}
+.nav-section ul li:hover {
+    color: white;
+    transform: scale(1.1);
+}
+.nav-section ul .active {
+    color: white;
+}
+.nav-section p {
+    font-size: 1.5rem;
+}
+
+
+/* burger menu */
+
+.burger-menu {
+    filter: invert();
+    width: 2.5rem;
+    display: none;
+}
+
+/* main section css */
+
+.carousel-section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+}
+.carousel-section .content{
+    top: 8.6rem;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.carousel-section .content p {
+    margin-bottom: 7rem;
+    font-size: 2.3rem;
+    color: white;
+}
+.carousel-section .content button {
+    font-size: 0.8rem;
+    color: white;
+    background: rgb(255 255 255 / 10%);
+    border: 2px solid white;
+    padding: 0.6rem 2.5rem;
+    border-radius: 6px;
+}
+.carousel-section .content button:hover {
+    opacity: 0.5;
+}
+
+/* carousel css */
+.owl-carousel{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.owl-carousel .owl-nav{
+    display: none;
+}
+.owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 1rem;
+}
+.owl-carousel .owl-item img {
+    width: 100%;
+    height: 25rem;
+}
+
+/* content section css */
+.content-section {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 0;
+}
+.content-section span {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    color: #6e6d6d;
+
+}
+.content-section .desc p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+.content-section .heading {
+    font-size: 1.8rem;
+}
+.content-section div {
+    justify-content: space-around;
+    width: 45%;
+    margin: 2rem;
+}
+.content-img img {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+/* map section css */
+
+.map-section {
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+}
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer css */
+
+footer {
+    justify-content: center;
+    background-color: #04D98B;
+    padding: 0.5rem;
+    color: white;
+}
+
+/* toggle classes */
+.show-menu {
+    display: block !important;
+}
+
+/* media query */
+
+@media screen and (max-width: 900px) {
+    .content-section .desc {
+        padding: 0 6rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav-section ul {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        top: 4rem;
+        z-index: 3;
+        align-items: flex-start;
+        background-color: #445d60;
+        display: none;
+        width: 100%;
+    }
+    .nav-section ul li {
+        margin: 0.4rem 0;
+        padding: 0.4rem;
+        border-bottom: 1px solid #bfb9b9;
+    }
+    .nav-section ul li:hover {
+        color: white;
+        transform: scale(1);
+    }
+    .divider {
+        display: none;
+    }
+    .last-item {
+        border-bottom: none !important;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .carousel-section {
+        overflow: hidden;
+    }
+    .carousel-section img {
+        width: auto;
+        height: auto;
+    }
+    .content-section .desc p {
+        font-size: 0.4rem;
+    }
+    .content-img img {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .carousel-section .content p  {
+        margin-bottom: 4rem;
+        font-size: 1.3rem;
+        color: white;
+    }
+    .content-section .heading {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .carousel-section .content p  {
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+    .content-section .heading {
+        font-size: 1rem;
+    }
+    .content-section .desc {
+        padding: 0px 2rem;
+    }
+    .content-section div {
+        width: 100%;
+        margin: 2rem;
+    }
+}
